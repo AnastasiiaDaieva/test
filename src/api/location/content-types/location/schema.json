@@ -45,7 +45,7 @@
       "required": true
     },
     "linkFrame": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "img": {
