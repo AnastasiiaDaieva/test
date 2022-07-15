@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "massages",
+  "info": {
+    "singularName": "massage",
+    "pluralName": "massages",
+    "displayName": "Massage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "types": {
+      "type": "enumeration",
+      "enum": [
+        "тренувальний масаж",
+        "передтренувальний масаж",
+        "відновлювальний масаж",
+        "розминочний масаж",
+        "передстартовий масаж",
+        "зігріваючий масаж"
+      ]
+    },
+    "massage_prices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::massage-price.massage-price"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "massage"
+    }
+  }
+}
