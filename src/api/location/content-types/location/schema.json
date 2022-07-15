@@ -45,14 +45,20 @@
       "required": true
     },
     "linkFrame": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "frameTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

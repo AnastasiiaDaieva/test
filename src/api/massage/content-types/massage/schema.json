@@ -36,11 +36,6 @@
         "зігріваючий масаж"
       ]
     },
-    "massage_prices": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::massage-price.massage-price"
-    },
     "services": {
       "type": "relation",
       "relation": "oneToMany",
