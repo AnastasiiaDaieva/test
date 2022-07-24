@@ -59,18 +59,6 @@
       "default": "massage",
       "required": true
     },
-    "spa_program": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::spa-program.spa-program",
-      "inversedBy": "services"
-    },
-    "massage": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::massage.massage",
-      "inversedBy": "services"
-    },
     "body_service": {
       "type": "relation",
       "relation": "manyToOne",

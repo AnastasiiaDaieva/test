@@ -16,35 +16,42 @@
       "type": "string",
       "required": true
     },
-    "type": {
-      "type": "string",
-      "required": true
-    },
     "available": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "components": {
-      "type": "text",
-      "required": true
-    },
     "effect": {
       "type": "string"
     },
-    "time": {
+    "typeLabel": {
       "type": "string",
+      "default": "SPA програми",
       "required": true
     },
-    "price": {
+    "typeValue": {
       "type": "string",
+      "default": "spa",
       "required": true
     },
-    "services": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service.service",
-      "mappedBy": "spa_program"
+    "components": {
+      "type": "json",
+      "required": true
+    },
+    "details": {
+      "type": "json",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

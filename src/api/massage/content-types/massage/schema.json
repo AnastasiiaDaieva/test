@@ -25,22 +25,34 @@
       "type": "text",
       "required": true
     },
-    "types": {
-      "type": "enumeration",
-      "enum": [
-        "тренувальний масаж",
-        "передтренувальний масаж",
-        "відновлювальний масаж",
-        "розминочний масаж",
-        "передстартовий масаж",
-        "зігріваючий масаж"
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     },
-    "services": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service.service",
-      "mappedBy": "massage"
+    "details": {
+      "type": "json",
+      "required": true
+    },
+    "typeLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Масаж"
+    },
+    "typeValue": {
+      "type": "string",
+      "required": true,
+      "default": "massage"
+    },
+    "types": {
+      "type": "json",
+      "required": false
     }
   }
 }
