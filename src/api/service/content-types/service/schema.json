@@ -58,12 +58,6 @@
       ],
       "default": "massage",
       "required": true
-    },
-    "body_service": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::body-service.body-service",
-      "inversedBy": "services"
     }
   }
 }

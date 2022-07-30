@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "type": {
+    "typeLabel": {
       "type": "string",
       "default": "Естетика тіла",
       "required": true
@@ -29,29 +29,25 @@
     "description": {
       "type": "text"
     },
+    "typeValue": {
+      "type": "string",
+      "default": "body",
+      "required": true
+    },
     "types": {
-      "type": "enumeration",
-      "enum": [
-        "кристалами тростинного цукру",
-        "кристалами морської солі",
-        "кристалами натурального меду",
-        "Шоколадне: має антиоксидантну дію, щволожує і тонізує шкіру, покращує настрій і емоційний фон.",
-        "Медовий: підвищує пружність тканин, згладжу ефект 'апельсинової шкірки', вирівнює силует."
-      ]
+      "type": "json"
     },
-    "time": {
-      "type": "string",
+    "details": {
+      "type": "json",
       "required": true
     },
-    "price": {
-      "type": "string",
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
-    },
-    "services": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service.service",
-      "mappedBy": "body_service"
     }
   }
 }
