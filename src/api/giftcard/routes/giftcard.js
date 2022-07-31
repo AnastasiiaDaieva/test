@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * service router.
+ * giftcard router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::service.service');
+module.exports = createCoreRouter('api::giftcard.giftcard');
