@@ -4,7 +4,8 @@
   "info": {
     "singularName": "giftcard",
     "pluralName": "giftcards",
-    "displayName": "Giftcard"
+    "displayName": "Giftcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,12 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
