@@ -59,6 +59,9 @@
     "frameTitle": {
       "type": "string",
       "required": true
+    },
+    "VideoLink": {
+      "type": "richtext"
     }
   }
 }
