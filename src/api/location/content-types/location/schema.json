@@ -62,6 +62,10 @@
     },
     "VideoLink": {
       "type": "richtext"
+    },
+    "city": {
+      "type": "string",
+      "required": true
     }
   }
 }
