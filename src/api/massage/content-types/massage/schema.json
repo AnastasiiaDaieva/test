@@ -50,6 +50,11 @@
     "types": {
       "type": "json",
       "required": false
+    },
+    "relatedLocations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
     }
   }
 }
