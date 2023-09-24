@@ -66,6 +66,12 @@
     "city": {
       "type": "string",
       "required": true
+    },
+    "specialists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialist.specialist",
+      "mappedBy": "locations"
     }
   }
 }

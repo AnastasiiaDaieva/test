@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_descrs",
+  "info": {
+    "singularName": "about-descr",
+    "pluralName": "about-descrs",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    }
+  }
+}
