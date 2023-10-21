@@ -72,6 +72,12 @@
       "relation": "manyToMany",
       "target": "api::specialist.specialist",
       "mappedBy": "locations"
+    },
+    "service_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service-type.service-type",
+      "mappedBy": "locations"
     }
   }
 }
