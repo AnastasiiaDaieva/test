@@ -78,6 +78,11 @@
       "relation": "manyToMany",
       "target": "api::service-type.service-type",
       "mappedBy": "locations"
+    },
+    "online": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
