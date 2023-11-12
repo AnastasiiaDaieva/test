@@ -55,6 +55,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location"
+    },
+    "prices": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
